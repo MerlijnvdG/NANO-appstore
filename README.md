@@ -8,7 +8,7 @@ Welkom bij de NANO-appstore! Dit is de appstore die ik heb gemaakt voor een scho
 De levensklok vraagt om je naam, leeftijd en het huidige jaar en berekent op basis daarvan een schatting van wanneer je zou kunnen overlijden. Het geeft ook een (100% echte) doodsoorzaak.
 
 ### 2. Jokes app
-De Jokes app biedt een selectie van grappen in verschillende categorieën, zoals programmeren, donkere humor, woordspelingen, enz. Je kunt kiezen welk type grap je wilt horen, en de app genereert een grap voor je.
+De Jokes app biedt een selectie van grappen in verschillende categorieën, zoals programmeren, dark humor, woordspelingen, enz. Je kunt kiezen welk type grap je wilt horen, en de app genereert een grap voor je.
 
 ### 3. Weerapp
 De weerapp vraagt om de naam van een stad en geeft het actuele weer weer, inclusief temperatuur, gevoelstemperatuur, luchtvochtigheid en een korte beschrijving van de weersomstandigheden.
