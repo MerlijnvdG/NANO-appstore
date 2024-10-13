@@ -25,9 +25,11 @@ while True:
         exit()
 
     print("\nSelecteer een app om uit te voeren (of voer '0' in om af te sluiten):")
-    for aantal, app in enumerate(pythonlijst):
+    index = 1
+    for app in pythonlijst:
         selectieapp = app.replace("_", " ").replace(".py", "")
-        print(f"{aantal + 1}. {selectieapp}")
+        print(f"{index}. {selectieapp}")
+        index = index + 1
     print("0. Afsluiten")
 
     try:
@@ -58,6 +60,5 @@ while True:
 # BRON
 # https://www.datacamp.com/tutorial/python-subprocess
 # https://stackoverflow.com/questions/1685157/how-can-i-specify-working-directory-for-a-subprocess
-# https://www.geeksforgeeks.org/enumerate-in-python/
 
 
