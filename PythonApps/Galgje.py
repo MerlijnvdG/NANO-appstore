@@ -85,7 +85,7 @@ def galgje(moeilijkheid):
             fouten = fouten + 1
 
             if aantalfouten - fouten != 0:
-                print(f"Je kan nog {aantalfouten - fouten} keer raden.")
+                print(f"Je kan nog {aantalfouten - fouten} keer fout raden.")
 
         woord_geraden = True
 
