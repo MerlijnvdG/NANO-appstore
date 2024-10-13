@@ -1,0 +1,5 @@
+Leuk dat je zelf je apps wilt gaan toevoegen!
+Dit gaat heel erg makkelijk, want het enige wat je hoeft te doen is jouw eigen app slepen in PythonApps.
+De naam van jouw app zal in het menu de naam van het bestand worden, maar dan wordt een "_" gewoon een spatie.
+Alleen python kunnen in het menu worden getoont en gespeeld worden, andere bestanden zullen worden genegeerd.
+Heel veel succes!
