@@ -93,6 +93,7 @@ def galgje(moeilijkheid):
             if letter not in geradenletters:
                 woord_geraden = False
                 break
+
         print()
         if woord_geraden:
             print(f"Woord: {randomwoord}")
