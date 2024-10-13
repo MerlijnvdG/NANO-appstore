@@ -110,6 +110,7 @@ def spel(maxgetal, aantalraden, jouwrandomgetal):
             print("Je hebt het getal geraden, gefeliciteerd!")
             speel_opnieuw = input("Wil je nog een keer spelen? (ja/nee)")
             if not opnieuw(speel_opnieuw):
+                print("Bedankt voor het spelen!")
                 break
 
         else:
@@ -122,6 +123,7 @@ def spel(maxgetal, aantalraden, jouwrandomgetal):
             print(f"Helaas! Je hebt verloren. Het getal was {jouwrandomgetal}")
             speel_opnieuw = input("Wil je nog een keer spelen? (ja/nee)")
             if not opnieuw(speel_opnieuw):
+                print("Bedankt voor het spelen!")
                 break
 
 
