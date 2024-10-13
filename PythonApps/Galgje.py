@@ -112,15 +112,20 @@ def galgje(moeilijkheid):
         print(f"Je hebt verloren! Het woord was: '{randomwoord}'.")
         if moeilijkheid == 2:
             score -= 3
+            if score < 0:
+                score = 0
             print(f"\nJe hebt 3 punten verloren. Je hebt nu {score} {puntofpunten()}.\n")
         elif moeilijkheid == 1.4:
             score -= 5
+            if score < 0:
+                score = 0
             print(f"\nJe hebt 5 punten verloren. Je hebt nu {score} {puntofpunten()}.\n")
         else:
             score -= 10
+            if score < 0:
+                score = 0
             print(f"\nJe hebt 10 punten verloren. Je hebt nu {score} {puntofpunten()}.\n")
-        if score < 0:
-            score = 0
+
         opnieuw()
 
 def opnieuw():
@@ -131,7 +136,7 @@ def opnieuw():
             galgje(moeilijkheid)
         elif nogkeer == "nee":
             print("Bedankt voor het spelen!")
-            break
+            exit()
         else:
             print("Vul alleen ja of nee in.")
 
