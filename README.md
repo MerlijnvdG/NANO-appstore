@@ -2,6 +2,8 @@
 
 Welkom bij de NANO-appstore! Dit is de appstore die ik heb gemaakt voor een schoolopdracht. Hier kun je verschillende spellen spelen die ik zelf heb ontwikkeld of je eigen applicatie toevoegen.
 
+Zorg ervoor dat je requests hebt geinstalleerd met pip, anders werkt de jokes app en de weer app niet.
+
 ## Apps
 
 ### 1. Levensklok
