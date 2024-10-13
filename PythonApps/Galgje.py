@@ -143,6 +143,8 @@ def opnieuw():
 
 
 print("=-=-=-=-=-=Galgje=-=-=-=-=-=")
+naam = input("Wat is jouw naam:")
+print(f"Hallo {naam}!")
 moeilijkheid = kies_moeilijkheidsgraad()
 galgje(moeilijkheid)
 
