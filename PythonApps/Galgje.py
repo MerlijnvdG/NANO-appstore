@@ -31,9 +31,9 @@ def kies_moeilijkheidsgraad():
     while True:
         keuze = input("Kies een moeilijkheidsgraad (makkelijk, gemiddeld, moeilijk): ").lower()
         if keuze == "makkelijk":
-            return 2
+            return 1.8
         elif keuze == "gemiddeld":
-            return 1.4
+            return 1.3
         elif keuze == "moeilijk":
             return 1
         else:
@@ -51,6 +51,10 @@ def galgje(moeilijkheid):
     lengtewoord = len(randomwoord)
     aantalfouten = (lengtewoord * moeilijkheid)
     aantalfouten = round(aantalfouten)
+    if aantalfouten > 10:
+        aantalfouten = 10
+    elif aantalfouten < 4:
+        aantalfouten = 4
     fouten = 0
     print(f"Je mag {aantalfouten} fouten maken.")
 
@@ -98,10 +102,10 @@ def galgje(moeilijkheid):
         if woord_geraden:
             print(f"Woord: {randomwoord}")
             print(f"Gefeliciteerd! Je hebt het woord '{randomwoord}' geraden!")
-            if moeilijkheid == 2:
+            if moeilijkheid == 1.8:
                 score += 6
                 print(f"\nJe hebt 6 punten gewonnen! Je hebt nu {score} {puntofpunten()}.\n")
-            elif moeilijkheid == 1.4:
+            elif moeilijkheid == 1.3:
                 score += 8
                 print(f"\nJe hebt 8 punten gewonnen! Je hebt nu {score} {puntofpunten()}.\n")
             else:
@@ -111,12 +115,12 @@ def galgje(moeilijkheid):
 
     else:
         print(f"Je hebt verloren! Het woord was: '{randomwoord}'.")
-        if moeilijkheid == 2:
+        if moeilijkheid == 1.8:
             score -= 3
             if score < 0:
                 score = 0
             print(f"\nJe hebt 3 punten verloren. Je hebt nu {score} {puntofpunten()}.\n")
-        elif moeilijkheid == 1.4:
+        elif moeilijkheid == 1.3:
             score -= 5
             if score < 0:
                 score = 0
@@ -143,7 +147,7 @@ def opnieuw():
 
 
 print("=-=-=-=-=-=Galgje=-=-=-=-=-=")
-naam = input("Wat is jouw naam:")
+naam = input("Wat is jouw naam: ")
 print(f"Hallo {naam}!")
 moeilijkheid = kies_moeilijkheidsgraad()
 galgje(moeilijkheid)
