@@ -10,9 +10,9 @@ def watishetweer(stad):
     spannendhoor = requests.get(url)
 
     if spannendhoor.status_code == 200:
-        data = spannendhoor.json()
-        main = data['main']
-        weer = data['weather'][0]
+        allezooi = spannendhoor.json()
+        main = allezooi['main']
+        weer = allezooi['weather'][0]
 
         temperatuur = main['temp']
         gevoelstemperatuur = main['feels_like']
